@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DUT Share - Chia sẻ tài liệu Bách Khoa ĐN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>DUT Share</span>
+        </div>
+
+        <div class="user-mini-profile">
+          <div class="avatar-circle">SV</div>
+          <div class="user-info">
+            <strong>Sinh viên BKĐN</strong>
+            <small>Trường ĐH Bách Khoa</small>
+          </div>
+        </div>
+
+        <button class="btn-upload-new">
+          <i class="fa-solid fa-plus"></i> Tải tài liệu lên
+        </button>
+
+        <nav class="menu">
+          <a href="#" class="active"
+            ><i class="fa-solid fa-house"></i> Trang chủ</a
+          >
+          <a href="#"><i class="fa-solid fa-book"></i> Thư viện của tôi</a>
+          <a href="#"><i class="fa-solid fa-robot"></i> AI Hỗ trợ</a>
+          <a href="#"><i class="fa-solid fa-folder-open"></i> Các môn học</a>
+        </nav>
+
+        <div class="footer-sidebar">
+          <p>Môn học gần đây</p>
+          <ul>
+            <li><i class="fa-regular fa-folder"></i> Lập trình C</li>
+            <li><i class="fa-regular fa-folder"></i> Giải tích 1</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="top-header">
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              placeholder="Tìm kiếm đề thi, giáo trình, đồ án..."
+            />
+          </div>
+          <div class="header-actions">
+            <button class="btn-upgrade">
+              <i class="fa-solid fa-crown"></i> VIP
+            </button>
+            <div class="profile-icon"><i class="fa-solid fa-user"></i></div>
+          </div>
+        </header>
+
+        <section class="hero-banner">
+          <div class="hero-text">
+            <h1>Chia sẻ tri thức - Vượt qua kỳ thi</h1>
+            <p>
+              Kho tài liệu đồ sộ từ sinh viên Bách Khoa Đà Nẵng. Đề thi, đồ án,
+              bài tập lớn được chia sẻ miễn phí.
+            </p>
+            <button class="btn-primary" onclick="thongBao()">
+              Khám phá ngay
+            </button>
+          </div>
+          <div class="hero-image">
+            <i
+              class="fa-solid fa-shapes"
+              style="font-size: 80px; color: #0065c0; opacity: 0.2"
+            ></i>
+          </div>
+        </section>
+
+        <section class="document-section">
+          <h2>Tài liệu đang được quan tâm</h2>
+          <div class="card-grid">
+            <div class="doc-card">
+              <div class="card-preview">
+                <i class="fa-regular fa-file-pdf"></i>
+              </div>
+              <div class="card-info">
+                <h3>Đồ án Lập trình Web</h3>
+                <p class="subject">Công nghệ thông tin</p>
+                <div class="meta">
+                  <span><i class="fa-solid fa-eye"></i> 1.2k</span>
+                  <span><i class="fa-solid fa-thumbs-up"></i> 45</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="doc-card">
+              <div class="card-preview">
+                <i class="fa-regular fa-file-word"></i>
+              </div>
+              <div class="card-info">
+                <h3>Đề cương Giải tích 2</h3>
+                <p class="subject">Toán ứng dụng</p>
+                <div class="meta">
+                  <span><i class="fa-solid fa-eye"></i> 890</span>
+                  <span><i class="fa-solid fa-thumbs-up"></i> 120</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="doc-card">
+              <div class="card-preview">
+                <i class="fa-regular fa-file-image"></i>
+              </div>
+              <div class="card-info">
+                <h3>Slide bài giảng Vật lý 1</h3>
+                <p class="subject">Vật lý đại cương</p>
+                <div class="meta">
+                  <span><i class="fa-solid fa-eye"></i> 500</span>
+                  <span><i class="fa-solid fa-thumbs-up"></i> 30</span>
+                </div>
+              </div>
+            </div>
+            <div class="doc-card">
+              <div class="card-preview">
+                <i class="fa-regular fa-file-code"></i>
+              </div>
+              <div class="card-info">
+                <h3>Source code C# Winform</h3>
+                <p class="subject">Lập trình Windows</p>
+                <div class="meta">
+                  <span><i class="fa-solid fa-eye"></i> 2.1k</span>
+                  <span><i class="fa-solid fa-thumbs-up"></i> 200</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div id="documentModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <input
+      type="file"
+      id="fileSelector"
+      style="display: none"
+      accent="application/pdf,image/*"
+    />
+  </body>
+</html>
