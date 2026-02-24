@@ -197,6 +197,28 @@ body {
   color: #444;
 }
 
+/* Mục mới: Thư viện, AI, Môn học */
+.library-section,
+.ai-section,
+.subjects-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.ai-section input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subjects-section ul {
+  list-style: disc inside;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
